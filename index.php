@@ -15,6 +15,19 @@
           echo $msg;
         } ?></p>
   </div>
+
+
+  <div class="content">
+    <?php foreach ($conte as $cont) : ?>
+      <h2><?php echo $cont['name'] ?></h2>
+      <img src="./folder/<?php echo $cont['file']; ?>" alt="blog pics">
+      <p><?php echo $cont['para'] ?></p>
+      <hr>
+      <br>
+    <?php endforeach ?>
+  </div>
+
+
   <div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
@@ -40,16 +53,6 @@
     <span class="dot"></span>
     <span class="dot"></span>
     <span class="dot"></span>
-  </div>
-
-  <div class="content">
-    <?php foreach ($conte as $cont) : ?>
-      <h2><?php echo $cont['name'] ?></h2>
-      <img src="./folder/<?php echo $cont['file']; ?>" alt="blog pics">
-      <p><?php echo $cont['para'] ?></p>
-      <hr>
-      <br>
-    <?php endforeach ?>
   </div>
 
 
@@ -79,7 +82,7 @@
         </form>
     </div>
 
-    
+
     </div>
 
     <?php include 'footer.php' ?>
