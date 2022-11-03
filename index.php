@@ -39,8 +39,8 @@
 
   <div class="login-fom">
     <?php if (isset($_GET['logout']))
-      $msg0 = "Logoout successfull"; ?>
-    <p><?php if (isset($msg0)) {
+      $msg0 = "Logout successfull"; ?>
+    <p class="danger"><?php if (isset($msg0)) {
           echo $msg0;
         } ?></p>
   </div>
@@ -49,7 +49,7 @@
   <div class="login-fom">
     <?php if (isset($_GET['err']))
       $msg1 = "Cannot access this page please log in"; ?>
-    <p><?php if (isset($msg1)) {
+    <p class="danger"><?php if (isset($msg1)) {
           echo $msg1;
         } ?></p>
 
