@@ -7,6 +7,23 @@
 
 <div class="wrapper">
   <h1>ADVERTS</h1>
+  <?php foreach ($conte as $cont) : ?>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./folder/<?php echo $cont['file']; ?>" style="width:100%">
+      <div class="text"><?php echo $cont['name'] ?></div>
+     
+    </div>
+  </div>
+  <?php endforeach ?>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+  </div>
+
+
 
   <div class="login-fom">
     <?php if (isset($_GET['logout']))
@@ -28,32 +45,7 @@
   </div>
 
 
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="folder/1656582503596.jpg" style="width:100%">
-      <div class="text">Caption Text</div>
-    </div>
 
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="folder/1656582611202.jpg" style="width:100%">
-      <div class="text">Caption Two</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="folder/20221013_150111.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
-    </div>
-  </div>
-  <br>
-
-  <div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
 
 
   <div class="login-fom">
