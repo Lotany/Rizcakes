@@ -39,44 +39,29 @@
 
   <div class="login-fom">
     <?php if (isset($_GET['logout']))
-      $msg = "Logoout successfull"; ?>
-    <p><?php if (isset($msg)) {
-          echo $msg;
+      $msg0 = "Logoout successfull"; ?>
+    <p><?php if (isset($msg0)) {
+          echo $msg0;
         } ?></p>
   </div>
 
 
-  <div class="content">
-    <?php foreach ($conte as $cont) : ?>
-      <h2><?php echo $cont['name'] ?></h2>
-      <img src="./folder/<?php echo $cont['file']; ?>" alt="blog pics">
-      <p><?php echo $cont['para'] ?></p>
-      <hr>
-      <br>
-    <?php endforeach ?>
-  </div>
-
-
-
-
-
   <div class="login-fom">
     <?php if (isset($_GET['err']))
-      $msg = "Cannot access this page please log in"; ?>
-    <p><?php if (isset($msg)) {
-          echo $msg;
+      $msg1 = "Cannot access this page please log in"; ?>
+    <p><?php if (isset($msg1)) {
+          echo $msg1;
         } ?></p>
 
     <div class="login-fom">
       <?php if (isset($_GET['error']))
         $msg = "Failed to login"; ?>
 
-      <h2><a href="admin/dashboard.php">Dashboard</a></h3>
-
-
-        <p class="danger"><?php if (isset($msg)) {
+<p class="danger"><?php if (isset($msg)) {
                             echo $msg;
                           } ?></p>
+
+
         <form action="inc/login.php" method="post">
           <label for="user">Username</label>
           <input type="text" name="user">
@@ -98,13 +83,16 @@
     </div>
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="folder/1656582503596.jpg" alt="John" style="width:100%">
+      <?php foreach ($conte as $cont) : ?>
+        <img src="./folder/<?php echo $cont['file']; ?>" alt="John" style="width:100%">
         <div class="w3-container">
           <h3>Jane Doe</h3>
           <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          <p><?php echo $cont['para'] ?></p>
+          <p><button class="w3-button w3-light-grey w3-block"><a href="">Contact</a></button></p>
         </div>
+        <br>
+        <?php endforeach ?>
       </div>
     </div>
   </div>

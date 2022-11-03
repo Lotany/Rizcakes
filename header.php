@@ -23,7 +23,11 @@
 
 
              <li class="item">
-                <a href="#">Contact</a>
+                <a href="#">Login</a>
+              </li>
+
+              <li class="item">
+                <a href="admin/dashboard.php">Dashboard</a>
               </li>
 
               <li class="toggle">
