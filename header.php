@@ -20,17 +20,7 @@
             <li class="item">
                 <a href="#">About</a>
             </li>
-            <li class="item has-submenu">
-                <a tabindex="0">Services</a>
-                   <ul class="submenu">
-                    <li class="subitem"><a href="#">Development</a></li>
-                    <li class="subitem"><a href="#">Design</a></li>
-                    <li class="subitem"><a href="#">Networking</a></li>
-                    <li class="subitem"><a href="#">Repair & Maintenance</a></li>
-                   </ul>
-            </li>
-
-
+            
              <li class="item">
                 <a href="#">Contact</a>
               </li>

@@ -5,10 +5,8 @@
 <?php $conte = getposts(); ?>
 <?php include 'header.php' ?>
 
-<body>
-
 <div class="wrapper">
-  <h1>Tany public site</h1>
+  <h1>ADVERTS</h1>
 
   <div class="login-fom">
     <?php if (isset($_GET['logout']))
@@ -21,7 +19,6 @@
 
 
   <div class="slideshow-container">
-
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
       <img src="folder/Logopit_1659441378000.jpg" style="width:100%">
@@ -39,7 +36,6 @@
       <img src="folder/20221013_150111.jpg" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
-
   </div>
   <br>
 
@@ -91,4 +87,5 @@
 
     </div>
     </div>
+
     <?php include 'footer.php' ?>
