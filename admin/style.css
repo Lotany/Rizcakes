@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+.sess h3 {
+ color: green;
+}
+
+.sess i a {
+    color: red;
+    margin-top: 0px;
+    float: right;
+}
+
+.fom form button{
+    color: blue;
+
+}

@@ -1,0 +1,399 @@
+
+/* beginning of my code */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+nav {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+a {
+    color: rgb(55, 5, 237);
+    text-decoration: none;
+}
+
+.menu, .submenu {
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 7.5px 10px 7.5px 0;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item.button {
+    padding: 9px 5px;
+}
+
+.item:not(.button) a:hover, .item a:hover::after{
+    color: #ccc;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 15px;
+}
+
+.menu li.subitem a {
+    padding: 15px;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.item.button{
+    order: 2;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item{
+    display: block;
+}
+
+.button.secondary {
+    border-bottom: 1px #444 solid;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu-active .submenu{
+    display: block;
+}
+
+.has-submenu i{
+    font-size: 12px;
+}
+
+.has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: rgb(55, 5, 237);
+    padding-left: 5px;
+}
+
+.subitem a{
+    padding: 10px 15px;
+}
+
+.submenu-active {
+    background-color: rgb(189, 162, 162);
+    border-radius: 3px;
+}
+
+.wrap-content {
+    padding-top: 80px;
+    float: right;
+    width: 20%;
+}
+
+
+/*responsive */
+
+/* responsive navabar tablet*/
+@media all and (min-width: 700px){
+    nav {
+        position:fixed;
+        top: 0;
+        width: 100%;
+    }
+    .menu{
+        justify-content: center;
+    }
+
+    .logo{
+        flex: 1;
+    }
+
+    .item.button{
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle{
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+
+    .menu li.button a{
+        padding: 10px 15px;
+        margin: 5px 0;
+    }
+
+    .button a{
+        background: #0080ff;
+        border: 1px royalblue solid;
+    }
+
+    .button.secondary{
+        border: 0;
+    }
+
+    .button.secondary a{
+        background: transparent;
+        border: 1px #0080ff solid;
+    }
+  
+    .button a:hover {
+        text-decoration: none;
+    }
+
+    .button:not(.secondary) a:hover {
+        background: royalblue;
+        border-color: darkblue;
+    }
+
+}
+
+
+@media all and (min-width: 960px){
+    .menu{
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+    .logo{
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+    .button{
+        order: 2;
+    }
+
+    .submenu-active .submenu{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 68px;
+        background: #111;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .submenu-active {
+        border-radius: 0;
+    }
+
+}
+
+/* end of header styling */
+
+
+
+
+/*slider styling*/
+.myslides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+    from{opacity: 4;}
+    to {opacity: 1;}
+}
+
+
+@media only screen and (max-width:300px){
+    .text {font-size: 11px;}
+}
+
+/*content styling*/
+.danger {
+    color: red;
+    text-align: center;
+}
+.content{
+    box-sizing: border-box;
+    float: left;
+}
+
+
+.content h2 {
+color: green;
+text-align: center;
+text-transform: uppercase;
+margin-top: 0px;
+padding-top: 0px;
+}
+
+.content img {
+    max-width: 100%;
+    margin-top: 0px;
+    padding-top: 1px;
+}
+
+
+.content p {
+ font-size: 24px;
+ padding-top: 0px;
+ margin-top: 0px;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+
+
+/*footer*/
+
+
+footer {
+    width: calc(100%);
+    padding: 40px 40px;
+    background-color: #111;
+    margin-top: 20px;
+    overflow: hidden ;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+    
+}
+
+footer ul li a {
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+
+}
+
+
+.footer-links-cases {
+ display: none;
+}
+
+
+
+.footer-sm {
+    width: 50px;
+    float: right;
+}
+
+.footer-sm img{
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+@media only screen and (min-width: 1000px){
+    .footer-links-cases {
+        display: block;
+       }
+
+       footer ul li p{
+        font-family: Catamaran;
+        font-size: 16px;
+        color: #fff;
+        line-height: 40px;
+        text-transform: uppercase;
+    
+    }
+
+    footer ul {
+        padding-right: 30px ;
+    }
+}
