@@ -6,6 +6,8 @@
 <?php include 'header.php' ?>
 
 <body>
+
+<div class="wrapper">
   <h1>Tany public site</h1>
 
   <div class="login-fom">
@@ -22,19 +24,19 @@
 
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="img_nature_wide.jpg" style="width:100%">
+      <img src="folder/Logopit_1659441378000.jpg" style="width:100%">
       <div class="text">Caption Text</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="img_snow_wide.jpg" style="width:100%">
+      <img src="folder/1656582503596.jpg" style="width:100%">
       <div class="text">Caption Two</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="img_mountains_wide.jpg" style="width:100%">
+      <img src="folder/20221013_150111.jpg" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
 
@@ -88,28 +90,5 @@
 
 
     </div>
-    <script>
-      let slideIndex = 0;
-      showslides();
-
-      function showslides() {
-        let i;
-        let slides = document.getElementsByClassName("myslides");
-        let dots = getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showslides, 2000);
-      }
-    </script>
+    </div>
     <?php include 'footer.php' ?>

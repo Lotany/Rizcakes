@@ -227,6 +227,10 @@ a {
 
 }
 
+.wrapper {
+    padding-top: 100px;
+}
+
 /* end of header styling */
 
 * {box-sizing: border-box;}
