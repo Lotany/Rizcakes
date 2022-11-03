@@ -15,19 +15,16 @@
           echo $msg;
         } ?></p>
   </div>
-
-
-
   <div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="folder/Logopit_1659441378000.jpg" style="width:100%">
+      <img src="folder/1656582503596.jpg" style="width:100%">
       <div class="text">Caption Text</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="folder/1656582503596.jpg" style="width:100%">
+      <img src="folder/1656582611202.jpg" style="width:100%">
       <div class="text">Caption Two</div>
     </div>
 
@@ -44,7 +41,6 @@
     <span class="dot"></span>
     <span class="dot"></span>
   </div>
-
 
   <div class="content">
     <?php foreach ($conte as $cont) : ?>
@@ -81,11 +77,9 @@
           <input type="password" name="pass">
           <button name="submit" type="submit">Login</button>
         </form>
-
-
-
-
     </div>
+
+    
     </div>
 
     <?php include 'footer.php' ?>

@@ -20,18 +20,9 @@
             <li class="item">
                 <a href="#">About</a>
             </li>
-            
+
              <li class="item">
                 <a href="#">Contact</a>
-              </li>
-
-              <li class="item button">
-              <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-              </li>
-
-              <li class="item button secondary">
-              <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
               </li>
 
               <li class="toggle">

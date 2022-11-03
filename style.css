@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-    background: #fff;
+    background: rgb(255, 255, 255);
     position: fixed;
     top: 0;
     right: 0;
@@ -230,6 +230,13 @@ a {
 .wrapper {
     padding-top: 100px;
 }
+
+.wrapper h1{
+    text-align: center;
+    color: rgb(237, 109, 5);
+}
+
+
 
 /* end of header styling */
 
