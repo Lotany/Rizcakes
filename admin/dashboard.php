@@ -30,7 +30,9 @@ if(!isset($_SESSION["id"])){
             <label for="name">Name</label>
             <input type="text" name="name">
             <input type="file" name="uploadfile" value="">
-            <label for="para">Para</label>
+            <label for="para">Content</label>
+            <input type="text" name="cont">
+            <label for="link">Link</label>
             <input type="text" name="cont">
             <button type="submit" name="submit">Upload</button>
         </form>
