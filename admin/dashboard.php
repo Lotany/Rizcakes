@@ -36,7 +36,7 @@ if(!isset($_SESSION["id"])){
             <input type="text" name="cont">
             <button type="submit" name="submit">Upload</button>
         </form>
-        </div>
+    </div>
 
     </body>
 </html>

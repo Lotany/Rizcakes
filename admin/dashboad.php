@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
     $folder ="../folder/" . $file;
 
 
-    $sql ="insert into content(name, file, para, link) values('$name','$file', '$cont','$link)";
+    $sql ="insert into content(name, file, para, link) values('$name', '$file', '$cont', '$link)";
     $result = mysqli_query($conn, $sql);
     if(move_uploaded_file($filename, $folder)){
         header('location: dashboard.php?upload=success');
