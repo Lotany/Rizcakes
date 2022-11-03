@@ -41,8 +41,8 @@
     <?php if (isset($_GET['logout']))
       $msg0 = "Logout successfull"; ?>
     <p class="danger"><?php if (isset($msg0)) {
-          echo $msg0;
-        } ?></p>
+                        echo $msg0;
+                      } ?></p>
   </div>
 
 
@@ -50,25 +50,25 @@
     <?php if (isset($_GET['err']))
       $msg1 = "Cannot access this page please log in"; ?>
     <p class="danger"><?php if (isset($msg1)) {
-          echo $msg1;
-        } ?></p>
+                        echo $msg1;
+                      } ?></p>
 
     <div class="login-fom">
       <?php if (isset($_GET['error']))
         $msg = "Failed to login"; ?>
 
-<p class="danger"><?php if (isset($msg)) {
-                            echo $msg;
-                          } ?></p>
+      <p class="danger"><?php if (isset($msg)) {
+                          echo $msg;
+                        } ?></p>
 
 
-        <form action="inc/login.php" method="post">
-          <label for="user">Username</label>
-          <input type="text" name="user">
-          <label for="pass">Password</label>
-          <input type="password" name="pass">
-          <button name="submit" type="submit">Login</button>
-        </form>
+      <form action="inc/login.php" method="post">
+        <label for="user">Username</label>
+        <input type="text" name="user">
+        <label for="pass">Password</label>
+        <input type="password" name="pass">
+        <button name="submit" type="submit">Login</button>
+      </form>
     </div>
 
 
@@ -83,18 +83,18 @@
     </div>
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-      <?php foreach ($conte as $cont) : ?>
-        <img src="./folder/<?php echo $cont['file']; ?>" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>Jane Doe</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p><?php echo $cont['para'] ?></p>
-          <p><button class="w3-button w3-light-grey w3-block"><a href="">Contact</a></button></p>
-        </div>
-        <br>
+        <?php foreach ($conte as $cont) : ?>
+          <img src="./folder/<?php echo $cont['file']; ?>" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>Jane Doe</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+            <p><?php echo $cont['para'] ?></p>
+            <p><button class="w3-button w3-light-grey w3-block"><a href="">Contact</a></button></p>
+          </div>
+          <br>
         <?php endforeach ?>
       </div>
     </div>
   </div>
 
-    <?php include 'footer.php' ?>
+  <?php include 'footer.php' ?>
