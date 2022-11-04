@@ -84,12 +84,12 @@
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
         <?php foreach ($conte as $cont) : ?>
-          <img src="./folder/<?php echo $cont['file']; ?>" alt="John" style="width:100%">
+          <img src="./folder/<?php echo $cont['file']; ?>" alt="John" style="width:50%">
           <div class="w3-container">
-            <h3>Jane Doe</h3>
+            <h3><?php echo $cont['name']; ?></h3>
             <p class="w3-opacity">CEO & Founder</p>
             <p><?php echo $cont['para'] ?></p>
-            <p><button class="w3-button w3-light-grey w3-block"><a href="">Contact</a></button></p>
+            <p><button class="w3-button w3-light-grey w3-block"><a href="<?php $cont['link']; ?>">Contact Seller</a></button></p>
           </div>
           <br>
         <?php endforeach ?>
