@@ -11,19 +11,19 @@
   <div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="folder/1656582503596.jpg" style="max-width:50%">
+      <img src="folder/1656582503596.jpg" style="max-width:100%">
       <div class="text">Caption Text</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="folder/1656650273869.jpg" style="max-width:50%">
+      <img src="folder/1656650273869.jpg" style="max-width:100%">
       <div class="text">Caption Two</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="folder/Logopit_1663181254408_1.jpg" style="max-width:50%">
+      <img src="folder/Logopit_1663181254408_1.jpg" style="max-width:100%">
       <div class="text">Caption Three</div>
     </div>
   </div>

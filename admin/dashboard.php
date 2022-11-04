@@ -29,11 +29,11 @@ if(!isset($_SESSION["id"])){
         <form action="dashboad.php" method="POST" enctype="multipart/form-data">
             <label for="name">Name</label>
             <input type="text" name="name">
-            <input type="file" name="uploadfile" value="">
+            <input type="file" name="uploadfile">
             <label for="para">Content</label>
             <input type="text" name="cont">
             <label for="link">Link</label>
-            <input type="text" name="cont">
+            <input type="text" name="link">
             <button type="submit" name="submit">Upload</button>
         </form>
     </div>
