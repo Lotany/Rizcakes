@@ -25,7 +25,16 @@
         </div>
  
         </footer>
+<script>
 
+    function openLogin(){
+        document.getElementById("myForm").style.display ="block";
+    }
+
+    function closeLogin(){
+        document.getElementById("myForm").style.display ="none";
+    }
+</script>
    
         <script>
 let slideIndex = 0;
