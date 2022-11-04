@@ -304,7 +304,6 @@ img {vertical-align: middle;}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  float: left;
   margin: auto;
 }
 
@@ -361,42 +360,6 @@ img {vertical-align: middle;}
 
 
 /*content styling*/
-.danger {
-    color: red;
-    text-align: center;
-}
-.content{
-    box-sizing: border-box;
-    float: left;
-}
-
-
-.content h2 {
-color: green;
-text-align: center;
-text-transform: uppercase;
-margin-top: 0px;
-padding-top: 0px;
-}
-
-.content img {
-    max-width: 100%;
-    margin-top: 0px;
-    padding-top: 1px;
-}
-
-
-.content p {
- font-size: 24px;
- padding-top: 0px;
- margin-top: 0px;
- margin-left: 20px;
- margin-right: 20px;
-}
-
-
-/*content page*/
-
 .w3-padding-64 {
     padding-top: 44px !important;
     padding-bottom: 44px !important;
