@@ -23,7 +23,7 @@
 
 
              <li class="item">
-                <a href="#">Login</a>
+                <a class="open-button" onclick="openLogin()">Login</a>
               </li>
 
               <li class="item">

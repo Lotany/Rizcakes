@@ -62,20 +62,24 @@
                         } ?></p>
 
 
-      <form action="inc/login.php" method="post">
-        <label for="user">Username</label>
-        <input type="text" name="user">
-        <label for="pass">Password</label>
-        <input type="password" name="pass">
-        <button name="submit" type="submit">Login</button>
-      </form>
+
     </div>
 
 
   </div>
 
 
+  <div class="form-popup" id="myForm">
+<form action="inc/login.php" method="post" class="form-container">
+        <label for="user">Username</label>
+        <input type="text" name="user">
+        <label for="pass">Password</label>
+        <input type="password" name="pass">
+        <button class="btn" name="submit" type="submit">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">close</button>
+      </form>
 
+</div>
 
   <div class="w3-row-padding" id="about">
     <div class="w3-center w3-padding-64">
