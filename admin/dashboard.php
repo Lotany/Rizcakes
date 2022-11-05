@@ -17,7 +17,7 @@ if (!isset($_SESSION["id"])) {
             <div class="profile">
                 <img src="../banner.jpg" alt="profile picture">
                 <h3>Lotan Kilinda</h3>
-                <p>Designer</p>
+                <a href="logout.php">Logout</a>
             </div>
             <ul>
                 <li>

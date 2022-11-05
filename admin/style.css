@@ -41,11 +41,14 @@ body {
     margin: 10px 0 5px;
 }
 
-.wrapper .sidebar .profile p {
-    color: rgb(206, 240, 253);
+.wrapper .sidebar .profile a{
+    color: rgb(250, 7, 40);
+    text-transform: uppercase;
     font-size: 14px;
 }
-
+.wrapper .sidebar .profile a:hover{
+ color: #f4fbff;
+}
 
 .wrapper .sidebar ul li a{
     display: block;
