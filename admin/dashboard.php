@@ -38,5 +38,15 @@ if(!isset($_SESSION["id"])){
         </form>
     </div>
 
+
+    <div class="wrapper">
+        <div class="sidebar">
+
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
     </body>
 </html>

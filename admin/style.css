@@ -1,18 +1,23 @@
-h1 {
-    text-align: center;
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.sess h3 {
- color: green;
+body {
+    background: #f5f6fa;
 }
 
-.sess i a {
-    color: red;
-    margin-top: 0px;
-    float: right;
-}
-
-.fom form button{
-    color: blue;
-
+.wrapper .sidebar {
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100px;
+    padding: 20px 0;
+    transition: all 0.5s ease;
 }
