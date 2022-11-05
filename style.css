@@ -450,6 +450,7 @@ footer ul li a {
 .footer-sm img{
     width: 100%;
     margin-bottom: 10px; 
+    border-radius: 50%;
 }
 
 @media only screen and (min-width: 1000px){
@@ -467,6 +468,6 @@ footer ul li a {
     }
 
     footer ul {
-        padding-right: 30px ;
+        padding-right: 78px ;
     }
 }
