@@ -3,7 +3,7 @@
   include 'inc/config.php'; 
   include 'inc/public_func.php';
   $conte = getpostsdesc();
-  $taita = getpostsasc();
+  $taita = getpostrand();
   include 'header.php';
   include 'login.php';
   ?>
@@ -46,6 +46,7 @@
       <img src="./folder/<?php echo $cont['file']; ?>" class="fakeimg1" style="height: 200px;">
       <h5><?php echo $cont['name']; ?></h5>
       <p><?php echo $cont['para'] ?></p>
+      <button>Contact Seller</button>
     </div>
   <?php endforeach ?>
   </div>
@@ -55,8 +56,8 @@
     <?php foreach($taita as $dawida) : ?>
     <div class="card">
       <h2> heading 3</h2>
-      <h5><?php echo $cont['name']; ?></h5>
-      <img src="./folder/<?php echo $cont['file']; ?>" class="fakeimg" style="height: 200px;">
+      <h5><?php echo $dawida['name']; ?></h5>
+      <img src="./folder/<?php echo $dawida['file']; ?>" class="fakeimg" style="height:200px;">
       <p><?php echo $dawida['para'] ?></p>
     </div>
     <?php endforeach ?>
