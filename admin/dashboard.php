@@ -81,7 +81,10 @@ if (!isset($_SESSION["id"])) {
     </div>
 
     <script>
-
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function(){
+            document.querySelector("body").classList
+        })
     </script>
 </body>
 
