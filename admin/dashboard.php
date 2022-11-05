@@ -13,6 +13,8 @@ if (!isset($_SESSION["id"])) {
 
 <body>
     <div class="wrapper">
+
+    <!--sidebar navigation -->
         <div class="sidebar">
             <div class="profile">
                 <img src="../banner.jpg" alt="profile picture">
@@ -65,8 +67,8 @@ if (!isset($_SESSION["id"])) {
             </ul>
         </div>
 
+        <!--section navbar-->
         <div class="section">
-
             <div class="top_navbar">
                 <div class="hamburger">
                     <a href="#">
