@@ -15,9 +15,31 @@
       <h2> heading 1</h2>
       <img src="folder/1656582503596.jpg" class="fakeimg1" style="height: 200px;">
       <h5>Tittle description, dec 5, 2020</h5>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quod aspernatur ipsa deserunt esse libero iure. Quibusdam, molestias consectetur omnis rem eaque nostrum cum aliquam harum, ducimus alias tenetur asperiores?</p>
     </div>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quod aspernatur ipsa deserunt esse libero iure. Quibusdam, molestias consectetur omnis rem eaque nostrum cum aliquam harum, ducimus alias tenetur asperiores?</p>
-  </div>
-</div>
 
-<?php include 'footer.php' ?>
+    <div class="card">
+      <h2>heading 2</h2>
+      <h5>Tittle description, dec 5, 2020</h5>
+      <img src="images/image_3.png" class="fakeimg1" style="height: 200px;">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia blanditiis nemo voluptatibus sint eveniet aperiam eaque, quisquam nam distinctio quod, ab nesciunt et cumque, debitis porro. Praesentium molestias repellendus temporibus!</p>
+    </div>
+  </div>
+
+          <!-- middle column-->
+          <div class="middlecolumn">
+            <div class="card">
+                <h2> heading 3</h2>
+                <h5>Tittle description, dec 5, 2020</h5>
+                <img src="images/image_3.png" class="fakeimg" style="height: 200px;">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus a esse quos, minima sint dolore saepe. Quidem aperiam obcaecati iure? Consequuntur possimus libero molestias autem provident omnis, dolorem nemo est.</p>
+            </div>
+            <div class="card">
+                <h2>heading 4</h2>
+                <h5>Tittle description, dec 5, 2020</h5>
+                <img src="images/image_3.png" class="fakeimg" style="height: 200px;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolores eaque incidunt porro! Sapiente esse quam, facere voluptate, consectetur eveniet, quod explicabo sunt ducimus reprehenderit distinctio aspernatur fugit possimus cumque!</p>
+            </div>
+        </div>
+
+  <?php include 'footer.php' ?>
