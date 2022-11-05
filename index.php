@@ -7,10 +7,10 @@
 
 <!--displayed errors here -->
 <?php include 'login.php' ?>
-  
-  <?php include 'errors.php' ?>
+
 <!--end of errors -->
 <div class="row">
+<?php include 'errors.php' ?>
   <div class="leftcolumn">
   <div class="slideshow-container">
     <div class="mySlides fade">
