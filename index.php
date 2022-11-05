@@ -13,7 +13,7 @@
   <!--end of errors -->
 
   <h1>ADVERTS</h1>
-
+<div class="leftcolumn"></div>
   <div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
