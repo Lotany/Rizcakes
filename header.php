@@ -15,7 +15,7 @@
                 <a href="index.php">Able Kilinda</a>
             </li>
             <li class="item">
-                <a href="#">Home</a>
+                <a href="index.php">Home</a>
             </li>
             <li class="item">
                 <a href="#">About</a>

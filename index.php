@@ -11,19 +11,14 @@
 <!--end of errors -->
 <div class="row">
   <div class="leftcolumn">
+  <?php foreach ($conte as $cont) : ?>
     <div class="card">
       <h2> heading 1</h2>
-      <img src="folder/1656582503596.jpg" class="fakeimg1" style="height: 200px;">
-      <h5>Tittle description, dec 5, 2020</h5>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quod aspernatur ipsa deserunt esse libero iure. Quibusdam, molestias consectetur omnis rem eaque nostrum cum aliquam harum, ducimus alias tenetur asperiores?</p>
+      <img src="./folder/<?php echo $cont['file']; ?>" class="fakeimg1" style="height: 200px;">
+      <h5><?php echo $cont['name']; ?></h5>
+      <p><?php echo $cont['para'] ?></p>
     </div>
-
-    <div class="card">
-      <h2>heading 2</h2>
-      <h5>Tittle description, dec 5, 2020</h5>
-      <img src="images/image_3.png" class="fakeimg1" style="height: 200px;">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia blanditiis nemo voluptatibus sint eveniet aperiam eaque, quisquam nam distinctio quod, ab nesciunt et cumque, debitis porro. Praesentium molestias repellendus temporibus!</p>
-    </div>
+  <?php endforeach ?>
   </div>
 
   <!-- middle column-->
