@@ -3,6 +3,7 @@
   include 'inc/config.php'; 
   include 'inc/public_func.php';
   $conte = getpostsdesc();
+  $taita = getpostsasc();
   include 'header.php';
   include 'login.php';
   ?>
@@ -51,18 +52,14 @@
 
   <!-- middle column-->
   <div class="middlecolumn">
+    <?php foreach($taita as $dawida) : ?>
     <div class="card">
       <h2> heading 3</h2>
-      <h5>Tittle description, dec 5, 2020</h5>
-      <img src="images/image_3.png" class="fakeimg" style="height: 200px;">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus a esse quos, minima sint dolore saepe. Quidem aperiam obcaecati iure? Consequuntur possimus libero molestias autem provident omnis, dolorem nemo est.</p>
+      <h5><?php echo $cont['name']; ?></h5>
+      <img src="./folder/<?php echo $cont['file']; ?>" class="fakeimg" style="height: 200px;">
+      <p><?php echo $dawida['para'] ?></p>
     </div>
-    <div class="card">
-      <h2>heading 4</h2>
-      <h5>Tittle description, dec 5, 2020</h5>
-      <img src="images/image_3.png" class="fakeimg" style="height: 200px;">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolores eaque incidunt porro! Sapiente esse quam, facere voluptate, consectetur eveniet, quod explicabo sunt ducimus reprehenderit distinctio aspernatur fugit possimus cumque!</p>
-    </div>
+    <?php endforeach ?>
   </div>
 
   <!--right column -->
