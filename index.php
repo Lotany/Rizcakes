@@ -1,12 +1,11 @@
-<?php session_start();
-?>
-<?php include 'inc/config.php'; ?>
-<?php include 'inc/public_func.php'; ?>
-<?php $conte = getposts(); ?>
-<?php include 'header.php' ?>
-
-<!--displayed errors here -->
-<?php include 'login.php' ?>
+<?php
+  session_start();
+  include 'inc/config.php'; 
+  include 'inc/public_func.php';
+  $conte = getpostsdesc();
+  include 'header.php';
+  include 'login.php';
+  ?>
 
 <!--end of errors -->
 <div class="row">
@@ -70,7 +69,7 @@
   <div class="rightcolumn">
     <div class="card">
       <h2>About me</h2>
-      <img src="images/banner.jpg" class="fakeimg" style="height: 200px;">
+      <img src="folder/banner.jpg" class="fakeimg" style="height: 200px;">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus soluta autem earum iusto vero voluptatum reiciendis exercitationem ullam itaque magnam labore quidem voluptas quisquam necessitatibus, consequuntur tempore sequi nam fugit.</p>
     </div>
     <div class="card">
