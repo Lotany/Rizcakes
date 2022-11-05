@@ -293,12 +293,12 @@ a {
 
 
 
-
-
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -359,112 +359,10 @@ img {vertical-align: middle;}
 }
 
 
-/*content styling*/
-.w3-padding-64 {
-    padding-top: 44px !important;
-    padding-bottom: 44px !important;
-  }
-
-  .w3-padding-16 {
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
-  }
-
-  .w3-border-dark-grey{
-    border-color: #616161 !important;
-  }
-
-  .w3-center {
-    text-align: center !important;
-  }
-
-  .w3-margin-bottom {
-    margin-bottom: 16px !important;
-  }
-
-  .w3-card-4{
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .w3-container:after,
-  .w3-container:before {
-    content: "";
-    display: table;
-    clear: both;
-
-  }
-
-.w3-container{
-    padding: 0.01em 16px;
-}
-
-.w3-opacity{
-    opacity: 0.6;
-}
-
-.w3-button {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-  }
-
-
-  .w3-button {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-
-  .w3-button {
-    width: 100%;
-    text-align: left;
-    padding: 8px 16px;
-  }
-
-  .w3-button {
-    white-space: normal;
-  }
-
-  .w3-button {
-    width: 60%;
-  }
-
-  .w3-light-grey{
-    color: #000 !important;
-    background-color: #f1f1f1 !important;
-  }
-
-  .w3-block {
-    display: block;
-    width: 50%;
-  }
-
-
-
-
-
-
-
-
-
 
 
 
 /*footer*/
-
-
 footer {
     width: calc(100%);
     padding: 40px 40px;
